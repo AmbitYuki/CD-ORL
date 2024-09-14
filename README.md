@@ -9,9 +9,7 @@ CD-ORL presents a cutting-edge reinforcement learning framework meticulously des
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [Citation](#citation)
-- [License](#license)
+
 
 ## Introduction
 
