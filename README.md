@@ -1,95 +1,89 @@
-```markdown
-# CD-ORL: Coordination-Oriented Reinforcement Learning
+## Abstract
 
-
-CD-ORL is a novel reinforcement learning framework designed for efficient sensor-actuator coordination in complex robotic systems. It integrates subequivariant principles into graph neural network policies, leveraging linguistic priors and trajectory simulations to enhance learning efficiency and generalization.
+CD-ORL presents a cutting-edge reinforcement learning framework meticulously designed for efficient sensor-actuator coordination in complex robotic systems. This innovative approach integrates subequivariant principles into graph neural network policies, leveraging linguistic priors and trajectory simulations to significantly enhance learning efficiency and generalization capabilities.
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [Introduction](#introduction)
+- [Key Features](#key-features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
+- [Citation](#citation)
 - [License](#license)
 
-## Overview
+## Introduction
 
-CD-ORL addresses the challenges of coordinating sensor-actuator systems in complex robotic platforms by:
+The CD-ORL framework addresses the intricate challenges of coordinating sensor-actuator systems in advanced robotic platforms. By incorporating state-of-the-art machine learning techniques, CD-ORL aims to push the boundaries of robotic control and automation.
 
-1. Incorporating subequivariant graph networks to preserve transitional symmetries and dependencies.
-2. Utilizing large language models (LLMs) to extract semantic physical knowledge as priors.
-3. Employing LLM-based trajectory simulation for data augmentation.
+## Key Features
 
-This approach significantly improves sample efficiency and control accuracy across various robotic tasks.
+1. **Subequivariant Graph Networks**: Preservation of transitional symmetries and dependencies in complex robotic systems.
+2. **LLM-Based Semantic Knowledge Extraction**: Utilization of large language models to extract and leverage semantic physical knowledge as priors.
+3. **LLM-Driven Trajectory Simulation**: Employment of language model-based trajectory simulation for effective data augmentation.
+4. **Enhanced Sample Efficiency**: Significant improvements in learning efficiency across diverse robotic tasks.
+5. **Improved Control Accuracy**: Demonstrated enhancements in control precision for various robotic applications.
 
 ## Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/cd-orl.git
+   ```bash
+   git clone https://github.com/ambityuki/cd-orl.git
    cd cd-orl
    ```
 
-2. Set up a virtual environment (optional but recommended):
-   ```
+2. Set up a virtual environment (recommended):
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
 3. Install dependencies:
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
-4. To use Docker, run:
-   ```
+4. Docker deployment (optional):
+   ```bash
    ./docker_run.sh
    ```
 
 ## Usage
 
 1. Fine-tune the LLM for physical knowledge extraction:
-   ```
+   ```bash
    python llm_finetuning/llama_3_model.py
    ```
 
-2. Process the raw data:
-   ```
+2. Process raw data:
+   ```bash
    python processed/mujoco_env.py
    ```
 
 3. Train the CD-ORL model:
-   ```
+   ```bash
    python scripts/run_experiment.py
    ```
 
-4. Evaluate the model:
-   ```
+4. Evaluate model performance:
+   ```bash
    python scripts/stepping_task.py
    ```
 
 ## Project Structure
 
-- `llm_finetuning/`: Scripts for fine-tuning LLMs on physical knowledge.
-- `network/`: Implementation of the subequivariant graph neural network.
-- `processed/`: Directory for storing processed data.
-- `rl/`: Core reinforcement learning algorithms and CD-ORL implementation.
-- `scripts/`: Utility scripts for data processing and experiment management.
-- `util/`: Helper functions and utilities.
-- `docker_run.sh`: Script for running the project in a Docker container.
-
-## Contributing
-
-We welcome contributions to CD-ORL! Please refer to our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to make contributions.
-
-
-
-## Citation
-
-If you use CD-ORL in your research, please cite our paper:
-
+```
+cd-orl/
+├── llm_finetuning/    # LLM fine-tuning scripts
+├── network/           # Subequivariant graph neural network implementation
+├── processed/         # Processed data storage
+├── rl/                # Core RL algorithms and CD-ORL implementation
+├── scripts/           # Utility scripts for data processing and experiments
+├── util/              # Helper functions and utilities
+├── docker_run.sh      # Docker deployment script
+├── requirements.txt   # Project dependencies
+└── README.md          # Project documentation
 ```
 
-For any questions or issues, please open an issue on GitHub or contact the authors.
-```
+For inquiries or issues, please open an issue on GitHub or contact the authors at Github.
