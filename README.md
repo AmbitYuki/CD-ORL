@@ -1,87 +1,133 @@
+# CD-ORL: Hybrid Physical-Linguistic Knowledge Fusion for Efficient Enhanced Robotic Coordination in Subequivariant Reinforcement Learning Framework
+
+<div align="center">
+
+```
+   ______  _____     ____  _____  _      
+  / ___/ / ___/    / __ \/ ___/ / /     
+ / /__  / /__     / / / / /    / /      
+/____/  \___/    /_/ /_/_/    /_/       
+```
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+</div>
+
 ## Abstract
 
 CD-ORL presents a cutting-edge reinforcement learning framework meticulously designed for efficient sensor-actuator coordination in complex robotic systems. This innovative approach integrates subequivariant principles into graph neural network policies, leveraging linguistic priors and trajectory simulations to significantly enhance learning efficiency and generalization capabilities.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [Key Features](#key-features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
-
-
-## Introduction
-
-The CD-ORL framework addresses the intricate challenges of coordinating sensor-actuator systems in advanced robotic platforms. By incorporating state-of-the-art machine learning techniques, CD-ORL aims to push the boundaries of robotic control and automation.
+- [Usage](#usage)
+- [Implementation Details](#implementation-details)
+- [Citation](#citation)
 
 ## Key Features
 
-1. **Subequivariant Graph Networks**: Preservation of transitional symmetries and dependencies in complex robotic systems.
-2. **LLM-Based Semantic Knowledge Extraction**: Utilization of large language models to extract and leverage semantic physical knowledge as priors.
-3. **LLM-Driven Trajectory Simulation**: Employment of language model-based trajectory simulation for effective data augmentation.
-4. **Enhanced Sample Efficiency**: Significant improvements in learning efficiency across diverse robotic tasks.
-5. **Improved Control Accuracy**: Demonstrated enhancements in control precision for various robotic applications.
+1. **Subequivariant Graph Networks**: Preservation of transitional symmetries and dependencies in complex robotic systems
+2. **LLM-Based Semantic Knowledge Extraction**: Utilization of large language models for physical knowledge priors
+3. **LLM-Driven Trajectory Simulation**: Advanced trajectory simulation for data augmentation
+4. **Enhanced Sample Efficiency**: Significant improvements in learning efficiency
+5. **Improved Control Accuracy**: Superior control precision across various applications
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ambityuki/cd-orl.git
-   cd cd-orl
-   ```
+```bash
+# Clone repository
+git clone https://github.com/username/cd-orl.git
+cd cd-orl
 
-2. Set up a virtual environment (recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+# Install dependencies
+pip install -r requirements.txt
 
-4. Docker deployment (optional):
-   ```bash
-   ./docker_run.sh
-   ```
-
-## Usage
-
-1. Fine-tune the LLM for physical knowledge extraction:
-   ```bash
-   python llm_finetuning/llama_3_model.py
-   ```
-
-2. Process raw data:
-   ```bash
-   python processed/mujoco_env.py
-   ```
-
-3. Train the CD-ORL model:
-   ```bash
-   python scripts/run_experiment.py
-   ```
-
-4. Evaluate model performance:
-   ```bash
-   python scripts/stepping_task.py
-   ```
+# Optional: Docker deployment
+./docker_run.sh
+```
 
 ## Project Structure
 
 ```
 cd-orl/
-├── llm_finetuning/    # LLM fine-tuning scripts
-├── network/           # Subequivariant graph neural network implementation
-├── processed/         # Processed data storage
-├── rl/                # Core RL algorithms and CD-ORL implementation
-├── scripts/           # Utility scripts for data processing and experiments
-├── util/              # Helper functions and utilities
-├── docker_run.sh      # Docker deployment script
-├── requirements.txt   # Project dependencies
-└── README.md          # Project documentation
+├── llm_finetuning/          # LLM fine-tuning implementation
+│   ├── llama_3_model.py     # LLaMA model fine-tuning
+│   └── knowledge_extract.py # Semantic knowledge extraction
+│
+├── network/                 # Neural network implementations
+│   ├── gnn.py              # Graph neural network architecture
+│   └── subequivariant.py   # Subequivariant layer implementation
+│
+├── processed/              # Data processing and storage
+│   ├── mujoco_env.py      # MuJoCo environment wrapper
+│   └── data_process.py    # Data preprocessing utilities
+│
+├── rl/                    # Core RL components
+│   ├── policy.py         # Policy implementation
+│   ├── value.py          # Value function implementation
+│   └── agent.py          # RL agent implementation
+│
+├── scripts/              # Experiment and utility scripts
+│   ├── run_experiment.py # Main training script
+│   └── stepping_task.py  # Task-specific evaluation
+│
+├── util/                 # Utility functions
+│   ├── logger.py        # Logging utilities
+│   └── metrics.py       # Performance metrics
+│
+└── requirements.txt     # Project dependencies
 ```
 
-For inquiries or issues, please open an issue on GitHub or contact the authors at Github.
+## Usage
+
+```python
+# Fine-tune LLM for knowledge extraction
+python llm_finetuning/llama_3_model.py
+
+# Process environment data
+python processed/mujoco_env.py
+
+# Train CD-ORL model
+python scripts/run_experiment.py
+
+# Evaluate performance
+python scripts/stepping_task.py
+```
+
+## Implementation Details
+
+### Core Components
+
+1. **LLM Fine-tuning Module** (`llm_finetuning/`)
+   - Implements LLaMA model adaptation
+   - Extracts physical knowledge priors
+   - Manages semantic information processing
+
+2. **Network Architecture** (`network/`)
+   - Implements subequivariant graph neural networks
+   - Handles symmetry preservation
+   - Manages network topology
+
+3. **Reinforcement Learning Core** (`rl/`)
+   - Implements policy optimization
+   - Manages value function estimation
+   - Coordinates agent behavior
+
+4. **Data Processing** (`processed/`)
+   - Handles environment interactions
+   - Manages data preprocessing
+   - Implements simulation interfaces
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+For technical questions and contributions, please open an issue or contact the authors.
