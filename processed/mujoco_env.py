@@ -5,6 +5,7 @@ import mujoco_viewer
 
 DEFAULT_SIZE = 500
 
+
 class MujocoEnv():
     """Superclass for all MuJoCo environments.
     """
