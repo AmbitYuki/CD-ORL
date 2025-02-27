@@ -15,7 +15,6 @@ from llama1 import ModelArgs, Transformer, Tokenizer
 
 from reasoners import LanguageModel, GenerateOutput
 
-
 def setup_model_parallel() -> Tuple[int, int]:
     local_rank = int(os.environ.get("LOCAL_RANK", -1))
     world_size = int(os.environ.get("WORLD_SIZE", -1))
