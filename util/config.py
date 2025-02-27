@@ -5,6 +5,7 @@ import numpy as np
 from network import NetworkTypes
 
 
+
 def get_config():
     # get the parameters
     parser = argparse.ArgumentParser(
