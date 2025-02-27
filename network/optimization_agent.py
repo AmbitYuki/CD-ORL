@@ -38,6 +38,7 @@ from util.utils import means_diff_len
 import re
 
 
+
 def build_update_op_preprocess(action_size, task_name):
     """
         @brief: The preprocess that is shared by trpo, ppo and vpg updates
