@@ -8,7 +8,6 @@ from transformers import StoppingCriteriaList
 
 from reasoners import LanguageModel, GenerateOutput
 
-
 class LlamaCppModel(LanguageModel):
     def __init__(self, path, n_ctx=2048, n_batch=512, n_thread=None):
 
