@@ -1,41 +1,38 @@
-# CD-ORL: Hybrid Physical-Linguistic Knowledge Fusion for Efficient Enhanced Robotic Coordination in Subequivariant Reinforcement Learning Framework
+# 🤖 CD-ORL: Hybrid Physical-Linguistic Knowledge Fusion for Efficient Enhanced Robotic Coordination in Subequivariant Reinforcement Learning Framework
 
 <div align="center">
 
-```
-   ______  _____     ____  _____  _      
-  / ___/ / ___/    / __ \/ ___/ / /     
- / /__  / /__     / / / / /    / /      
-/____/  \___/    /_/ /_/_/    /_/       
-```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://github.com/username/cd-orl)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
 </div>
 
-
-## Abstract
+## 📑 Abstract
 
 CD-ORL presents a cutting-edge reinforcement learning framework meticulously designed for efficient sensor-actuator coordination in complex robotic systems. This innovative approach integrates subequivariant principles into graph neural network policies, leveraging linguistic priors and trajectory simulations to significantly enhance learning efficiency and generalization capabilities.
 
-## Table of Contents
+## 📋 Table of Contents
 
-- [Key Features](#key-features)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Implementation Details](#implementation-details)
-- [Citation](#citation)
+- [🌟 Key Features](#-key-features)
+- [⚙️ Installation](#️-installation)
+- [📂 Project Structure](#-project-structure)
+- [🚀 Usage](#-usage)
+- [🔍 Implementation Details](#-implementation-details)
+- [📊 Results](#-results)
+- [📝 Citation](#-citation)
+- [👥 Contributors](#-contributors)
 
-## Key Features
+## 🌟 Key Features
 
-1. **Subequivariant Graph Networks**: Preservation of transitional symmetries and dependencies in complex robotic systems
-2. **LLM-Based Semantic Knowledge Extraction**: Utilization of large language models for physical knowledge priors
-3. **LLM-Driven Trajectory Simulation**: Advanced trajectory simulation for data augmentation
-4. **Enhanced Sample Efficiency**: Significant improvements in learning efficiency
-5. **Improved Control Accuracy**: Superior control precision across various applications
+1. **🔄 Subequivariant Graph Networks**: Preservation of transitional symmetries and dependencies in complex robotic systems
+2. **🧠 LLM-Based Semantic Knowledge Extraction**: Utilization of large language models for physical knowledge priors
+3. **📈 LLM-Driven Trajectory Simulation**: Advanced trajectory simulation for data augmentation
+4. **⚡ Enhanced Sample Efficiency**: Significant improvements in learning efficiency
+5. **🎯 Improved Control Accuracy**: Superior control precision across various applications
 
-## Installation
+## ⚙️ Installation
 
 ```bash
 # Clone repository
@@ -53,7 +50,7 @@ pip install -r requirements.txt
 ./docker_run.sh
 ```
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 cd-orl/
@@ -85,7 +82,7 @@ cd-orl/
 └── requirements.txt     # Project dependencies
 ```
 
-## Usage
+## 🚀 Usage
 
 ```python
 # Fine-tune LLM for knowledge extraction
@@ -101,34 +98,85 @@ python scripts/run_experiment.py
 python scripts/stepping_task.py
 ```
 
-## Implementation Details
+## 🔍 Implementation Details
 
 ### Core Components
 
-1. **LLM Fine-tuning Module** (`llm_finetuning/`)
+1. **🧩 LLM Fine-tuning Module** (`llm_finetuning/`)
    - Implements LLaMA model adaptation
    - Extracts physical knowledge priors
    - Manages semantic information processing
 
-2. **Network Architecture** (`network/`)
+2. **🌐 Network Architecture** (`network/`)
    - Implements subequivariant graph neural networks
    - Handles symmetry preservation
    - Manages network topology
 
-3. **Reinforcement Learning Core** (`rl/`)
+3. **🤖 Reinforcement Learning Core** (`rl/`)
    - Implements policy optimization
    - Manages value function estimation
    - Coordinates agent behavior
 
-4. **Data Processing** (`processed/`)
+4. **💾 Data Processing** (`processed/`)
    - Handles environment interactions
    - Manages data preprocessing
    - Implements simulation interfaces
 
+## 📊 Results
 
-## License
+<div align="center">
+<table>
+  <tr>
+    <th>Method</th>
+    <th>Sample Efficiency</th>
+    <th>Control Accuracy</th>
+    <th>Generalization</th>
+  </tr>
+  <tr>
+    <td>Baseline RL</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+  </tr>
+  <tr>
+    <td>GNN-based RL</td>
+    <td>✓✓</td>
+    <td>✓✓</td>
+    <td>✓✓</td>
+  </tr>
+  <tr>
+    <td><b>CD-ORL (Ours)</b></td>
+    <td>✓✓✓</td>
+    <td>✓✓✓</td>
+    <td>✓✓✓</td>
+  </tr>
+</table>
+</div>
+
+## 📝 Citation
+
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@article{author2024cdorl,
+  title={CD-ORL: Hybrid Physical-Linguistic Knowledge Fusion for Efficient Enhanced Robotic Coordination in Subequivariant Reinforcement Learning Framework},
+  author={Author, A. and Researcher, B.},
+  journal={arXiv preprint arXiv:2403.XXXXX},
+  year={2024}
+}
+```
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 👥 Contributors
+Thank you to Fudan University and INF Technology Company for providing technical and conceptual guidance, and thank you to Tongji University for providing computing power equipment.
+
 ---
-For technical questions and contributions, please open an issue or contact the authors.
+
+<div align="center">
+  <sub>🔬 Built with academic rigor and computational precision.</sub>
+  <br>
+  <sub>For technical questions and contributions, please open an issue or contact the authors.</sub>
+</div>
