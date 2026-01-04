@@ -1,5 +1,4 @@
-# 🤖 CD-ORL: Hybrid Physical-Linguistic Knowledge Fusion for Efficient Enhanced Robotic Coordination in Subequivariant Reinforcement Learning Framework
-
+# 🤖 CD-ORL: Sensor-Actuator Coordination for Legged Robot Locomotion: A Dynamics-Constrained Control Framework with Multimodal State Estimation
 <div align="center">
 
 
@@ -153,17 +152,6 @@ python scripts/stepping_task.py
 </table>
 </div>
 
-## 📝 Citation
-
-If you find this work useful in your research, please consider citing:
-
-```bibtex
-@article{author2024cdorl,
-  title={CD-ORL: Hybrid Physical-Linguistic Knowledge Fusion for Efficient Enhanced Robotic Coordination in Subequivariant Reinforcement Learning Framework},
-  author={Author, A. and Researcher, B.},
-  journal={arXiv preprint arXiv:2403.XXXXX},
-  year={2024}
-}
 ```
 
 ## 📄 License
