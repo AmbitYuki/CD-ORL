@@ -158,9 +158,6 @@ python scripts/stepping_task.py
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Contributors
-Thank you to Fudan University and INF Technology Company for providing technical and conceptual guidance, and thank you to Tongji University for providing computing power equipment.
-
 ---
 
 <div align="center">
