@@ -1,4 +1,4 @@
-# 🤖 CD-ORL: Sensor-Actuator Coordination for Legged Robot Locomotion: A Dynamics-Constrained Control Framework with Multimodal State Estimation
+# 🤖 Dynamics-Constrained Hierarchical Control for Legged Robot Locomotion via Coordinated State Estimation
 <div align="center">
 
 
@@ -11,6 +11,8 @@
 ## 📑 Abstract
 
 CD-ORL presents a cutting-edge reinforcement learning framework meticulously designed for efficient sensor-actuator coordination in complex robotic systems. This innovative approach integrates subequivariant principles into graph neural network policies, leveraging linguistic priors and trajectory simulations to significantly enhance learning efficiency and generalization capabilities.
+
+CD-ORL: Sensor-Actuator Coordination for Legged Robot Locomotion: A Dynamics-Constrained Control Framework with Multimodal State Estimation 
 
 ## 📋 Table of Contents
 
