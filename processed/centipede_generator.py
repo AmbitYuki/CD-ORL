@@ -4,6 +4,7 @@ MUJOCO_XML_HEAD = """
 <mujoco model="centipede">
   <compiler angle="degree" coordinate="local" inertiafromgeom="true"/>
 
+
   <option integrator="RK4" timestep="0.01"/>
 
   <default>
