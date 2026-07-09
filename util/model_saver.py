@@ -8,6 +8,7 @@ import re
 init_path.bypass_frost_warning()
 
 
+
 def save_tf_model(sess, model_path, tf_var_list=[]):
     """
         @brief: save the tensorflow variables into a numpy npy file
