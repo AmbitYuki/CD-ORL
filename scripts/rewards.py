@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def _calc_fwd_vel_reward(self):
     # forward vel reward
     root_vel = self._client.get_qvel()[0]
