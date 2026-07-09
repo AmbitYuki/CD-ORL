@@ -4,7 +4,6 @@ from graph_util import graph_data_util, gnn_util
 from network import NetworkTypes
 from util import init_path
 
-
 class base_agent(multiprocessing.Process):
     def __init__(
         self, args, task_name, task_q, result_q, thread_name, name_scope="trpo_agent",
